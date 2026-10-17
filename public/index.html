@@ -17,8 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles-engagements.css" />
-    <script src="/script.js?v=20261020-studio" defer></script>
+    <link rel="stylesheet" href="/styles-contact-form.css" />
+    <script src="/script-contact-form.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -107,7 +107,32 @@
 
       <section class="faq section-pad" aria-labelledby="faq-title"><div class="section-meta"><p class="eyebrow">GOOD TO KNOW</p></div><div class="faq-content"><h2 id="faq-title">A few useful answers.</h2><details><summary>Can 021Labs join an existing product team?</summary><p>Yes. A contract engagement can focus on a defined feature, mobile engineering work or a delivery milestone. The scope and collaboration style are agreed around your team.</p></details><details><summary>Can you work with a product that is already live?</summary><p>Yes. The first step is to understand the current architecture, user feedback and the outcome you want. From there, we can identify a practical, bounded next step.</p></details><details><summary>What should I include in a project enquiry?</summary><p>A short description of the product, who it is for, what is currently difficult and any timing or technical constraints is enough to start the conversation.</p></details></div></section>
 
-      <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="contact-main"><div class="section-meta"><p class="eyebrow">START WITH A CONVERSATION</p></div><h2 id="contact-title">What are you<br /><em>trying to make possible?</em></h2><p>Share the product, feature or engineering challenge on your mind. We’ll reply by email and work out whether there’s a useful fit.</p><a class="button button-light" href="mailto:info@021labs.online?subject=021Labs%20project%20enquiry">Email 021Labs <span aria-hidden="true">↗</span></a></div><div class="contact-side"><span>DIRECT CONTACT</span><a href="mailto:info@021labs.online">info@021labs.online</a><small>Pakistan · Available for remote collaboration</small></div></section>
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="contact-main">
+          <div class="section-meta"><p class="eyebrow">START WITH A CONVERSATION</p></div>
+          <h2 id="contact-title">What are you<br /><em>trying to make possible?</em></h2>
+          <p>Tell us a little about the product, feature or engineering challenge. A few useful details help us understand where to begin.</p>
+          <form class="contact-form" id="project-enquiry" action="mailto:info@021labs.online" method="post" enctype="text/plain">
+            <div class="contact-form-grid">
+              <label>Your name<input name="Name" autocomplete="name" required placeholder="How should we address you?" /></label>
+              <label>Work email<input type="email" name="Reply email" autocomplete="email" required placeholder="you@company.com" /></label>
+              <label class="form-field-wide">Company or product <span>(optional)</span><input name="Company or product" autocomplete="organization" placeholder="Company name or product link" /></label>
+              <label class="form-field-wide">What kind of help do you need?
+                <select name="Engagement type" required>
+                  <option value="" selected disabled>Select an engagement</option>
+                  <option>Product build</option>
+                  <option>Focused feature delivery</option>
+                  <option>Embedded engineering</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+              <label class="form-field-wide">What are you working on?<textarea name="Project details" rows="4" required maxlength="3000" placeholder="The goal, what is difficult right now, and any timing or technical constraints…"></textarea></label>
+            </div>
+            <div class="contact-form-actions"><button class="button button-light" type="submit">Prepare email enquiry <span aria-hidden="true">↗</span></button><p id="contact-form-status" role="status" aria-live="polite">Your details stay in a draft until you review and send it.</p></div>
+          </form>
+        </div>
+        <aside class="contact-side"><span>DIRECT CONTACT</span><a href="mailto:info@021labs.online">info@021labs.online</a><small>Pakistan · Available for remote collaboration</small><p>Prefer email? Send a note directly and include any links or context that will help us understand the project.</p></aside>
+      </section>
     </main>
 
     <footer class="footer"><a class="brand" href="#top" aria-label="021Labs home"><span class="brand-mark-image" aria-hidden="true"></span><span class="brand-text">Labs</span></a><p>Thoughtful products. Clear engineering. Useful outcomes.</p><span class="copyright">© <span id="year">2026</span> 021Labs</span></footer>

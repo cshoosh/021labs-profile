@@ -53,3 +53,26 @@
 @media(max-width:1000px){.delivery.section-pad{grid-template-columns:.85fr 1.15fr;gap:5%;padding-inline:32px}.delivery-option summary{gap:12px;padding:18px}.delivery-detail{padding-left:73px}}
 @media(max-width:720px){.delivery.section-pad{display:block;padding:72px 20px;background:radial-gradient(ellipse at 90% 3%,rgba(181,235,86,.2),transparent 32%),linear-gradient(145deg,#eef1e9,#f7f8f5 62%,#e8ede6)}.delivery-copy .section-meta{margin-bottom:23px}.delivery h2{font-size:clamp(39px,10vw,54px)}.delivery-intro{font-size:11px!important}.delivery-callout{margin-top:24px;padding:17px 18px}.delivery-options{margin-top:28px;gap:10px}.delivery-option summary{grid-template-columns:38px minmax(0,1fr) 20px;gap:11px;padding:16px 14px}.delivery-symbol{width:36px;height:36px}.delivery-option-copy strong{font-size:13px}.delivery-option-copy>span{font-size:8px}.delivery-detail{padding:0 16px 18px 63px;gap:11px}.delivery-detail>div{grid-template-columns:1fr;gap:4px}.delivery-detail>div b,.delivery-detail>div span{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.delivery-option,.delivery-symbol,.delivery-toggle:before,.delivery-toggle:after{transition:none}.delivery-detail{animation:none}}
+
+/* Project enquiry form */
+.contact.section-pad{grid-template-columns:minmax(0,1.55fr) minmax(240px,.65fr);align-items:start;gap:clamp(42px,7vw,105px)}
+.contact-main{min-width:0;max-width:840px}
+.contact-main>p{max-width:610px}
+.contact-form{margin-top:27px}
+.contact-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 14px}
+.contact-form label{display:grid;gap:7px;min-width:0;color:#30413a;font-size:9px;font-weight:700}
+.contact-form label>span{display:inline;color:#62735e;font-weight:500}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;min-width:0;border:1px solid rgba(23,37,53,.2);border-radius:0;background:rgba(255,255,255,.76);padding:12px 13px;color:var(--ink);font:500 10px var(--font);outline:none;transition:border-color .18s ease,box-shadow .18s ease,background .18s ease}
+.contact-form input,.contact-form select{height:42px}
+.contact-form textarea{min-height:106px;resize:vertical;line-height:1.65}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#89958c;font-weight:400}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#63842e;background:#fff;box-shadow:0 0 0 3px rgba(108,152,39,.13)}
+.contact-form .form-field-wide{grid-column:1/-1}
+.contact-form-actions{display:flex;align-items:center;gap:16px;margin-top:18px;flex-wrap:wrap}
+.contact-form-actions .button{border:0;cursor:pointer}
+.contact-form-actions .button:focus-visible{outline:3px solid #668b2c;outline-offset:3px}
+.contact-form-actions>p{max-width:330px;margin:0;color:#496044;font-size:8px;line-height:1.6}
+.contact-side{align-self:center;max-width:390px}
+.contact-side p{max-width:300px;margin:5px 0 0;color:#496044;font-size:9px;line-height:1.8}
+@media(max-width:1000px){.contact.section-pad{grid-template-columns:minmax(0,1.35fr) minmax(210px,.65fr);gap:36px;padding-inline:32px}}
+@media(max-width:720px){.contact.section-pad{display:block;padding:64px 20px}.contact-form{margin-top:22px}.contact-form-grid{grid-template-columns:1fr;gap:13px}.contact-form .form-field-wide{grid-column:auto}.contact-form input,.contact-form select{height:44px}.contact-form textarea{min-height:120px}.contact-form-actions{align-items:flex-start;flex-direction:column;gap:11px}.contact-form-actions .button{width:100%;justify-content:space-between}.contact-form-actions>p{font-size:8px}.contact-side{margin-top:34px;max-width:none}.contact-side p{max-width:480px}}
