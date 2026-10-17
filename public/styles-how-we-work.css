@@ -108,3 +108,9 @@
 .contact-side p{max-width:300px;margin:5px 0 0;color:#496044;font-size:9px;line-height:1.8}
 @media(max-width:1000px){.contact.section-pad{grid-template-columns:minmax(0,1.35fr) minmax(210px,.65fr);gap:36px;padding-inline:32px}}
 @media(max-width:720px){.contact.section-pad{display:block;padding:64px 20px}.contact-form{margin-top:22px}.contact-form-grid{grid-template-columns:1fr;gap:13px}.contact-form .form-field-wide{grid-column:auto}.contact-form input,.contact-form select{height:44px}.contact-form textarea{min-height:120px}.contact-form-actions{align-items:flex-start;flex-direction:column;gap:11px}.contact-form-actions .button{width:100%;justify-content:space-between}.contact-form-actions>p{font-size:8px}.contact-side{margin-top:34px;max-width:none}.contact-side p{max-width:480px}}
+
+/* Give the engineering focus band a deliberate full-bleed background. */
+.studio-strip.section-pad{width:100%;max-width:none;margin-inline:0;padding-inline:max(48px,calc((100% - var(--max))/2));background:radial-gradient(ellipse at 10% 0%,rgba(181,235,86,.19),transparent 38%),linear-gradient(112deg,#e6ebe5 0%,#eef1ec 54%,#e3eae4 100%);border-block:1px solid #d9e0d9}
+.studio-strip .focus-list li{border-color:rgba(72,91,69,.2);border-radius:999px;background:rgba(255,255,255,.46);transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.studio-strip .focus-list li:hover{background:#fff;border-color:rgba(108,152,39,.4);transform:translateY(-2px)}
+@media(max-width:720px){.studio-strip.section-pad{width:100%;padding-inline:20px}}
