@@ -269,3 +269,4 @@
   .brand-wordmark{font-size:14px}
   .header-action{font-size:9px}
 }
+.enquiry-next li{grid-template-columns:minmax(0,1fr);gap:0;padding-left:15px;border-left:2px solid rgba(121,189,255,.5)}
