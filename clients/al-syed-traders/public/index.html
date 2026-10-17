@@ -25,7 +25,9 @@
     </header>
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-photo" role="img" aria-label="Industrial electrical switchgear and transformer equipment"></div>
+        <video class="hero-photo" autoplay muted loop playsinline preload="metadata" poster="/assets/substation-poster.jpg" aria-label="Electrical substation equipment video">
+          <source src="/assets/substation-video.mp4" type="video/mp4" />
+        </video>
         <div class="hero-shade"></div>
         <div class="hero-inner wrap">
           <p class="hero-kicker"><span></span> ELECTRICAL SERVICE PROVIDER</p>
@@ -33,6 +35,7 @@
           <p class="hero-copy">Service support for electrical panels and potential transformers—from installation assistance and inspection to maintenance and fault finding.</p>
           <a class="hero-button" href="#services">View service scope <span>↓</span></a>
         </div>
+        <a class="video-credit" href="https://www.pexels.com/video/transformers-at-an-electrical-station-10008320/" target="_blank" rel="noreferrer">VIDEO: ANDREY KIRIEVSKIY / PEXELS ↗</a>
         <div class="hero-caption"><span>01 / 02</span><span>POWER DISTRIBUTION · TRANSFORMER SUPPORT</span></div>
       </section>
 
@@ -65,6 +68,11 @@
       </section>
     </main>
     <footer class="footer wrap"><a class="brand footer-brand" href="#top"><span class="brand-mark">AST</span><span class="brand-name">AL SYED <b>TRADERS</b><small>POWER &amp; ELECTRICAL SERVICES</small></span></a><span>© <span id="year"></span> Al Syed Traders</span><a href="#top">Back to top ↑</a></footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelector('.hero-photo').pause();
+      }
+    </script>
   </body>
 </html>
